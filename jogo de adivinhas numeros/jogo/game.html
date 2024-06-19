@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para responsividade -->
+    <link rel="stylesheet" href="../boasVindas/style.css"> <!-- Vincula o arquivo CSS externo para estilização -->
+    
+    <title>Jogo de Adivinhação - Jogo</title> <!-- Define o título da página -->
+</head>
+
+<body>
+    <header>
+        <h1 id="welcomeMessage"></h1> <!-- Título principal que será preenchido dinamicamente pelo JavaScript -->
+    </header>
+    <main>
+        <form id="gameForm"> <!-- Formulário de entrada do jogo -->
+            <label for="guess">Digite um Número entre 1 & 100:</label> <!-- Rótulo para o campo de entrada -->
+            <input type="number" id="guess" min="1" max="100" required> <!-- Campo de entrada para o número a ser adivinhado -->
+            <button type="submit">Adivinhar</button> <!-- Botão para submeter a adivinhação -->
+        </form>
+        <p id="feedback"></p> <!-- Parágrafo para fornecer feedback ao usuário -->
+
+    </main>
+
+    <footer>
+        <audio controls id="audioIcon" autoplay> <!-- Elemento de áudio com controles de reprodução -->
+            <source src="../boasVindas/audio/som.mp3" type="audio/mpeg"> <!-- Fonte de áudio -->
+            Seu navegador não suporta o elemento de áudio. <!-- Mensagem exibida se o navegador não suportar áudio -->
+        </audio>
+    </footer>
+
+    <script src="../boasVindas/script.js"></script> <!-- Vincula o script JavaScript externo -->
+</body>
+
+</html>

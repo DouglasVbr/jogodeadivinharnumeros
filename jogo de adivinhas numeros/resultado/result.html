@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para responsividade -->
+    <link rel="stylesheet" href="../boasVindas/style.css"> <!-- Vincula o arquivo CSS externo para estilização -->
+    <title>Jogo de Adivinhação - Resultado</title> <!-- Define o título da página -->
+</head>
+<body>
+<header>
+    <h1 id="resultMessage"></h1> <!-- Cabeçalho da página que exibirá a mensagem de resultado -->
+</header>
+<main>
+    <p id="correctNumber"></p> <!-- Parágrafo para exibir o número correto -->
+    <p id="score"></p> <!-- Parágrafo para exibir a pontuação do jogador -->
+    <p id="ranking"></p> <!-- Parágrafo para exibir a posição no ranking -->
+    <a href="../jogo/game.html" id="playAgainLink"> Jogar Novamente </a> <!-- Link para jogar novamente -->
+    <a href="../boasVindas/index.html" id="goHomeLink">Tela Inicial</a> <!-- Link para retornar à tela inicial -->
+    <section>
+        <h3>Ranking</h3> <!-- Título da seção de ranking -->
+        <table id="rankingTable" border="1"> <!-- Tabela para exibir o ranking, com borda -->
+            <thead>
+                <tr>
+                    <th>Nome</th> <!-- Cabeçalho da coluna Nome -->
+                    <th>Tentativas</th> <!-- Cabeçalho da coluna Tentativas -->
+                    <th>Pontos</th> <!-- Cabeçalho da coluna Pontos -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Corpo da tabela onde os dados do ranking serão inseridos -->
+            </tbody>
+        </table>
+    </section>
+</main>
+<footer>
+    <audio controls id="audioIcon" autoplay> <!-- Controle de áudio para reprodução de som -->
+        <source src="../boasVindas/audio/comemoracao.mp3" type="audio/mpeg"> <!-- Fonte do arquivo de áudio -->
+        Seu navegador não suporta o elemento de áudio. <!-- Mensagem caso o navegador não suporte áudio -->
+    </audio>
+</footer>
+<script src="../boasVindas/script.js"></script> <!-- Script externo para funcionalidade -->
+</body>
+</html>

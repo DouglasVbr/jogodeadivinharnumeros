@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para responsividade -->
+    <link rel="stylesheet" href="../boasVindas/style.css"> <!-- Vincula o arquivo CSS externo para estilização -->
+    <title>FormSubmit.co</title> <!-- Define o título da página -->
+    <style>
+        body {
+            background-image: url('../boasVindas/img/imagemfundo.jpg'); /* Define uma imagem de fundo */
+            background-size: cover; /* A imagem de fundo cobre toda a área da tela */
+            background-repeat: no-repeat; /* A imagem de fundo não se repete */
+            background-attachment: fixed; /* A imagem de fundo permanece fixa ao rolar a página */
+            background-color: rgba(255, 255, 255, 0.8); /* Define uma cor de fundo branca semitransparente */
+            font-family: 'Honk', sans-serif; /* Define a fonte principal do corpo do texto */
+            color: #fff; /* Define a cor do texto como branco */
+            display: flex; /* Define o layout como flexbox */
+            justify-content: center; /* Centraliza o conteúdo horizontalmente */
+            align-items: center; /* Centraliza o conteúdo verticalmente */
+            height: 100vh; /* Garante que a altura ocupe toda a viewport */
+            margin: 0; /* Remove margens padrão do corpo */
+            padding: 0; /* Remove preenchimento padrão do corpo */
+        }
+
+        .container {
+            width: 80%; /* Largura do conteúdo */
+            max-width: 600px; /* Largura máxima para evitar que o conteúdo fique muito largo */
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para destacar o conteúdo */
+            padding: 20px; /* Espaçamento interno */
+            border-radius: 10px; /* Bordas arredondadas */
+            text-align: center; /* Centraliza o texto */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona sombra suave ao redor do container */
+        }
+
+        /* Ajustes para os inputs */
+        input[type="text"], input[type="email"], textarea {
+            width: 100%; /* Largura total do elemento */
+            padding: 10px; /* Espaçamento interno */
+            margin: 5px 0; /* Margem superior e inferior de 5px */
+            border: 1px solid #ccc; /* Borda cinza */
+            border-radius: 4px; /* Bordas arredondadas */
+            box-sizing: border-box; /* Inclui padding e border no tamanho total do elemento */
+            font-size: 16px; /* Tamanho da fonte */
+        }
+
+        input[type="email"] {
+            margin-bottom: 10px; /* Espaçamento inferior maior para separar dos botões */
+            height: 40px; /* Aumenta a altura do input */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Deixe sua mensagem aqui!</h1> <!-- Título da seção -->
+        <form id="myForm" action="https://formsubmit.co/douglascanal1998@gmail.com" method="POST"> <!-- Formulário que envia os dados para o FormSubmit.co -->
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" name="name" class="form-control" placeholder="Seu nome" required> <!-- Campo de entrada para o nome -->
+                    </div>
+                    <div class="col">
+                        <input type="email" name="email" class="form-control" placeholder="Seu Email" required> <!-- Campo de entrada para o email -->
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Digite algo..." class="form-control" name="message" rows="10" required></textarea> <!-- Campo de texto para a mensagem -->
+            </div>
+            <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar</button> <!-- Botão para enviar o formulário -->
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita o envio padrão do formulário
+            // Aqui você pode adicionar código para redirecionar para a página de sucesso
+            window.location.href = "http://127.0.0.1:5500/emailok/sucesso.html"; // Redireciona para a página de sucesso
+        });
+    </script>
+
+    <script src="../boasVindas/script.js"></script> <!-- Script externo para funcionalidades adicionais -->
+</body>
+</html>

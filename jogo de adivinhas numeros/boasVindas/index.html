@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para responsividade -->
+    <link rel="stylesheet" href="style.css"> <!-- Vincula o arquivo CSS externo para estilização -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Otimiza a conexão prévia ao Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Otimiza a conexão prévia ao Google Fonts com crossorigin -->
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Nabla&display=swap" rel="stylesheet"> <!-- Vincula as fontes Google Fonts -->
+    <title>Jogo de Adivinhação - Boas-vindas</title> <!-- Define o título da página -->
+</head>
+
+<body>
+    <header>
+        <h1>Bem-Vindo ao Jogo de Adivinhação</h1> <!-- Título principal da página -->
+    </header>
+    <main>
+        <form id="welcomeForm"> <!-- Formulário de boas-vindas -->
+            <label for="username">Digite seu Nome:</label> <!-- Rótulo para o campo de entrada -->
+            <input type="text" id="username" required pattern="[A-Za-zÁ-ú\s]+" title="Por favor, use apenas letras!"> <!-- Campo de entrada para o nome do usuário, com validação de caracteres -->
+            <button type="submit" id="startGameButton">Jogar</button> <!-- Botão para iniciar o jogo -->
+        </form>
+    </main>
+    <footer>
+        <audio controls id="audioIcon" autoplay> <!-- Elemento de áudio com controles de reprodução -->
+            <source src="audio/som.mp3" type="audio/mpeg"> <!-- Fonte de áudio -->
+            Seu navegador não suporta o elemento de áudio. <!-- Mensagem caso o navegador não suporte áudio -->
+        </audio>
+        <a href="../emailok/emailform.html">Enviar Mensagem</a> <!-- Link para a página de envio de mensagem -->
+    </footer>
+    <script src="script.js"></script> <!-- Script externo para funcionalidade -->
+</body>
+
+</html>

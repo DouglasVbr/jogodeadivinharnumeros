@@ -1,0 +1,138 @@
+body {
+    background-image: url('img/imagemfundo.jpg'); /* Define uma imagem de fundo */
+    background-size: cover; /* A imagem de fundo cobre toda a área da tela */
+    background-repeat: no-repeat; /* A imagem de fundo não se repete */
+    background-attachment: fixed; /* A imagem de fundo permanece fixa ao rolar a página */
+    background-color: rgba(255, 255, 255, 0.8); /* Define uma cor de fundo branca semitransparente */
+    font-family: 'Honk', sans-serif; /* Define a fonte principal do corpo do texto */
+    color: #fff; /* Define a cor do texto como branco */
+}
+
+header {
+    padding: 20px; /* Espaçamento interno de 20px ao redor do conteúdo do cabeçalho */
+    text-align: center; /* Centraliza o texto no cabeçalho */
+}
+
+h1 {
+    font-size: 3em; /* Define o tamanho da fonte do título principal */
+    color: #ffd700; /* Define a cor do texto do título como dourado */
+    text-shadow: 2px 2px 4px #800080; /* Adiciona sombra ao texto com cor roxa */
+}
+
+main {
+    padding: 20px; /* Espaçamento interno de 20px ao redor do conteúdo principal */
+    text-align: center; /* Centraliza o texto no conteúdo principal */
+}
+
+label {
+    font-size: 1.2em; /* Define o tamanho da fonte do rótulo */
+    color: #ffd700; /* Define a cor do texto do rótulo como dourado */
+}
+
+input[type="text"],
+input[type="number"],
+button,
+a {
+    padding: 10px; /* Espaçamento interno de 10px */
+    margin: 10px; /* Margem de 10px ao redor dos elementos */
+    border: none; /* Remove bordas */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1.2em; /* Define o tamanho da fonte */
+    text-decoration: none; /* Remove sublinhado dos links */
+    display: inline-block; /* Define os elementos como blocos em linha */
+}
+
+input[type="text"],
+input[type="number"] {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente */
+    color: #800080; /* Define a cor do texto como roxa */
+}
+
+button,
+a {
+    background-color: #800080; /* Fundo roxo */
+    color: #ffd700; /* Texto dourado */
+    cursor: pointer; /* Cursor do mouse como ponteiro */
+    text-align: center; /* Centraliza o texto */
+}
+
+button:hover,
+a:hover {
+    background-color: #ffd700; /* Fundo dourado ao passar o mouse */
+    color: #800080; /* Texto roxo ao passar o mouse */
+}
+
+footer {
+    padding: 20px; /* Espaçamento interno de 20px no rodapé */
+    text-align: center; /* Centraliza o texto no rodapé */
+}
+
+audio {
+    display: block; /* Define o elemento como bloco */
+    margin: 0 auto; /* Centraliza o elemento de áudio */
+}
+
+textarea {
+    width: 50%; /* Largura de 50% */
+    height: 150px; /* Altura de 150px */
+    padding: 12px 20px; /* Espaçamento interno de 12px nas laterais e 20px acima/abaixo */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total do elemento */
+    border: 2px solid white; /* Borda branca */
+    border-radius: 4px; /* Bordas arredondadas */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente */
+    font-size: 16px; /* Tamanho da fonte */
+    resize: none; /* Impede redimensionamento do textarea */
+}
+
+section {
+    margin: 20px auto; /* Margem de 20px no topo/inferior e centraliza horizontalmente */
+    width: 20%; /* Largura de 20% */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno de 20px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra ao redor da seção */
+}
+
+table {
+    width: 100%; /* Largura total da tabela */
+    border-collapse: collapse; /* Remove os espaços entre as células */
+    margin: 20px 0; /* Margem de 20px no topo e na base da tabela */
+}
+
+table, th, td {
+    border: 1px solid #800080; /* Bordas roxas */
+}
+
+th, td {
+    padding: 10px; /* Espaçamento interno de 10px */
+    text-align: center; /* Centraliza o texto */
+    color: #800080; /* Cor do texto roxa */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco quase opaco */
+}
+
+th {
+    background-color: #800080; /* Fundo roxo para cabeçalhos */
+    color: #ffd700; /* Texto dourado para cabeçalhos */
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente para linhas pares */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.6); /* Fundo branco mais transparente para linhas ímpares */
+}
+
+
+
+   .green { color: green; }
+   .orange { color: orange; }
+   .red { color: red; }
+
+
+   
+
+   #resultMessage {
+       font-family: 'Comic Sans MS', cursive, sans-serif;
+   }
+
